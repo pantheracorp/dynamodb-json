@@ -16,7 +16,7 @@ if sys.argv[-1] == 'publish':
     # os.system('python setup.py register -r https://pypi.python.org/pypi')
     os.system('twine upload dist/* -r pypi')
     print("Make a tag to me")
-    print("  git tag -a {0} -m 'version {0}'".format(__import__('dynamodb_json').__version__))
+    print("  git tag -a {0} -m 'version {0}'".format(__import__('panthera-dynamodb-json').__version__))
     print("  git push --tags")
     sys.exit()
 
@@ -28,7 +28,7 @@ install_requires = [
 
 setup(
     name='panthera-dynamodb-json',
-    version=__import__('panthera-dynamodb-json').__version__,
+    version='1.0.2',
     packages=find_packages(),
     url='https://github.com/pantheracorp/dynamodb-json',
     author='Panthera CTEC',
