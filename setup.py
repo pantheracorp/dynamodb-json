@@ -28,7 +28,7 @@ install_requires = [
 
 setup(
     name='panthera-dynamodb-json',
-    version='1.0.1',
+    version=__import__('panthera-dynamodb-json').__version__,
     packages=find_packages(),
     url='https://github.com/pantheracorp/dynamodb-json',
     author='Panthera CTEC',
