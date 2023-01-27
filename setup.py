@@ -21,18 +21,18 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 install_requires = [
-    'simplejson>=3.10.0',
-    'boto3>=1.4.0',
+    'simplejson>=3.18.1',
+    'boto3>=1.26.58',
     'six'
 ]
 
 setup(
-    name='dynamodb-json',
-    version=__import__('dynamodb_json').__version__,
+    name='panthera-dynamodb-json',
+    version='1.0.1',
     packages=find_packages(),
-    url='https://github.com/Alonreznik/dynamodb-json',
-    author='Alon Reznik',
-    author_email='alonreznik@gmail.com',
+    url='https://github.com/pantheracorp/dynamodb-json',
+    author='Panthera CTEC',
+    author_email='admin@panthera.org',
     description='A DynamoDB json util from and to python objects',
     long_description=open('README.md').read(),
     zip_safe=False,
